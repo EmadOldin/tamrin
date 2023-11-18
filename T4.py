@@ -9,8 +9,13 @@ if delta == 0:
 	print(-b/(2*a))
 	
 elif delta <0:
-	print("it doesnt have any value!")
+	print("Hich meghdari nadarad!")
 	
 else :
-	print(f"Rishe 1 : {(-b+sqrt(delta))/(2*a)}")
-	print(f"Rishe 2 : {(-b-sqrt(delta))/(2*a)}")
+	# using math library
+	# print(f"Rishe 1 : {(-b+sqrt(delta))/(2*a)}")
+	# print(f"Rishe 2 : {(-b-sqrt(delta))/(2*a)}")
+	# ----------------------------------------------------	
+	# with out math library
+	print(f"Rishe 1 : {(-b + (delta ** 0.5)) / (2*a)}")
+	print(f"Rishe 2 : {(-b - (delta ** 0.5)) / (2*a)}")
